@@ -8,7 +8,7 @@ import Swiper from 'react-native-swiper';
 import {resetRoute} from '../../actions/route';
 import {openDrawer} from '../../actions/drawer';
 
-import {Container, Header, Content, Text, Button, Icon, Card} from 'native-base';
+import {Container, Header, Content, Text, Button, Icon, Card, Title} from 'native-base';
 import { Grid, Col, Row } from "react-native-easy-grid";
 
 import theme from '../../themes/base-theme';
@@ -23,13 +23,13 @@ class Home extends Component {
     render() {
         return (
             <Container theme={theme}>
-                <Image source={require('../../../images/BG-signUp.png')} style={styles.container} >
+                {/*<Image source={require('../../../images/BG-signUp.png')} style={styles.container} >*/}
                     <Header>
                         <Button transparent style={{padding: 20}}  onPress={() => this.resetRoute('login')}>
                             <Icon name="ios-power" />
                         </Button>
                         
-                        <Image source={require('../../../images/Header-Logo.png')} style={styles.logoHeader} />
+                        <Title>Home</Title>
                         
                          <Button transparent onPress={this.props.openDrawer}  style={{padding: 20,paddingTop: 33}}>
                             <Icon name="ios-menu" />
@@ -42,34 +42,13 @@ class Home extends Component {
                             <Row>
                                 <View style={{flex: 1, alignItems: 'center'}}>
                                     <Text style={{fontSize: 20, marginBottom: 10}}>
-                                        React Native starter kit
-                                    </Text>
-                                </View>
-                            </Row>
-                            <Row>
-                                <View style={{flex: 1, alignItems: 'center'}}>
-                                    <Text style={{fontSize: 20, marginBottom: 10}}>
-                                        with flat UI design
-                                    </Text>
-                                </View>
-                            </Row>
-                            <Row>
-                                <View style={{flex: 1, alignItems: 'center'}}>
-                                    <Text style={{fontSize: 20, marginBottom: 10}}>
-                                        NativeBase
-                                    </Text>
-                                </View>
-                            </Row>
-                            <Row>
-                                <View style={{flex: 1, alignItems: 'center'}}>
-                                    <Text style={{fontSize: 20, marginBottom: 10}}>
-                                        Redux
+                                        Home Content Here...
                                     </Text>
                                 </View>
                             </Row>
                         </Grid>
                     </Content>
-                </Image>
+                {/*</Image>*/}
             </Container>
         )
     }

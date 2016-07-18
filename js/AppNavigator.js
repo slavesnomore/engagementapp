@@ -14,7 +14,9 @@ import Login from './components/login/';
 import Home from './components/home/';
 import SideBar from './components/sideBar';
 import SplashPage from './components/splashscreen/';
-import BlankPage from './components/blankPage/';
+import Engagement from './components/engagement/';
+import TakeAction from './components/takeaction/';
+import Profile from './components/profile/';
 import { statusBarColor } from "./themes/base-theme";
 
 Navigator.prototype.replaceWithAnimation = function (route) {
@@ -155,8 +157,12 @@ class AppNavigator extends Component {
                 return <Home navigator={navigator} />;
             case 'sideBar':
                 return <SideBar navigator={navigator} />;
-            case 'blankPage':
-                return <BlankPage navigator={navigator} />;
+            case 'engagement':
+                return <Engagement navigator={navigator} />;
+            case 'takeaction':
+                return <TakeAction navigator={navigator} />;
+            case 'profile':
+                return <Profile navigator={navigator} />;
             default :
                 return <Login navigator={navigator}  />;
         }

@@ -7,12 +7,12 @@ import { Image } from 'react-native';
 import {popRoute} from '../../actions/route';
 import {openDrawer} from '../../actions/drawer';
 
-import { Container, Header, Content, Text, Button, Icon } from 'native-base';
+import { Container, Header, Content, Text, Button, Icon, Title } from 'native-base';
 
 import theme from '../../themes/base-theme';
 import styles from './styles';
 
-class BlankPage extends Component {
+class TakeAction extends Component {
 
     popRoute() {
         this.props.popRoute();
@@ -27,7 +27,7 @@ class BlankPage extends Component {
                             <Icon name="ios-arrow-back" />
                         </Button>
                         
-                        <Image source={require('../../../images/Header-Logo.png')} style={styles.logoHeader} />
+                        <Title>Take Action</Title>
                         
                         <Button transparent onPress={this.props.openDrawer}  style={{padding: 20,paddingTop: 33}}>
                             <Icon name="ios-menu" />
@@ -35,7 +35,7 @@ class BlankPage extends Component {
                     </Header>
 
                     <Content padder style={{backgroundColor: '#fff'}} foregroundColor="#000">
-                        <Text>Create Something Awesome . . .</Text>
+                        <Text>Take action . . .</Text>
                     </Content>
                 </Image>
             </Container>
@@ -50,4 +50,4 @@ function bindAction(dispatch) {
     }
 }
 
-export default connect(null, bindAction)(BlankPage);
+export default connect(null, bindAction)(TakeAction);

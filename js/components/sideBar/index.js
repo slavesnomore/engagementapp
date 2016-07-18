@@ -26,18 +26,44 @@ class SideBar extends Component {
     render(){
         return (
             <Container>
-                <Image source={require('../../../images/BG-signUp.png')} style={styles.background} >
+                <Image source={require('../../../images/BG-sideBar.png')} style={styles.background} >
                     <Content style={Platform.OS === 'android' ? styles.adrawerContent : styles.drawerContent}>
                         <List foregroundColor={"white"} >
                             <ListItem button onPress={() => this.navigateTo('home')} iconLeft style={Platform.OS === 'android' ? styles.alinks : styles.links} >
                                 <Icon name="ios-home-outline" />
-                                <Text style={styles.linkText}>Home</Text>
+                                <Text style={styles.linkText}>HOME</Text>
                             </ListItem>
-                            <ListItem button onPress={() => this.navigateTo('blankPage')} iconLeft style={Platform.OS === 'android' ? styles.alinks : styles.links} >
-                                <Icon name="ios-paper-outline" />
-                                <Text style={styles.linkText}>Blank Page</Text>
+                            <ListItem button onPress={() => this.navigateTo('engagement')} iconLeft style={Platform.OS === 'android' ? styles.alinks : styles.links} >
+                                <Icon name="ios-videocam-outline" />
+                                <Text style={styles.linkText}>ENGAGEMENT</Text>
+                            </ListItem>
+                            <ListItem button onPress={() => this.navigateTo('takeaction')} iconLeft style={Platform.OS === 'android' ? styles.alinks : styles.links} >
+                                <Icon name="ios-navigate-outline" />
+                                <Text style={styles.linkText}>TAKE ACTION</Text>
+                            </ListItem>
+                            <ListItem button onPress={() => this.navigateTo('profile')} iconLeft style={Platform.OS === 'android' ? styles.alinks : styles.links} >
+                                <Icon name="ios-person-outline" />
+                                <Text style={styles.linkText}> PROFILE</Text>
                             </ListItem>
                         </List>
+
+                        <View style={styles.logoutContainer}>
+                            <View style={styles.logoutbtn}  foregroundColor={"white"}>
+                                <Grid>
+                                    <Col>
+                                        <TouchableOpacity onPress={() => this.resetRoute('login')} style={{alignSelf: 'flex-start'}}>
+                                            <Text style={{fontWeight: 'bold'}}>LOG OUT</Text>
+                                            <Text note >Kumar Sanket</Text>
+                                        </TouchableOpacity>
+                                    </Col>
+                                    <Col>
+                                        <TouchableOpacity style={{alignSelf: 'flex-end'}}  onPress={() => this.navigateTo('profile')}>
+                                            <Thumbnail source={require('../../../images/contacts/sanket.png')} style={{height: 40,width: 40, borderRadius: 20}} />
+                                        </TouchableOpacity>
+                                    </Col>
+                                </Grid>
+                            </View>
+                        </View>
                     </Content>
                 </Image>
             </Container>
