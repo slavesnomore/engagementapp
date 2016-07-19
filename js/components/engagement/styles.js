@@ -15,6 +15,18 @@ module.exports = StyleSheet.create({
         width: 20,
         height: 28,
         alignSelf: 'center'
-    }
+    },
+    engagementText: {
+        flex: 1,
+        paddingBottom: 10,
+        textAlign: 'center',
+        backgroundColor: '#999'
+    },
+    engagementImage: {
+        height: 100
+    },
+    engagementItem: {
+        flex: 1,
+        height: 150
+    },
 });
-
