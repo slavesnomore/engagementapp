@@ -17,10 +17,12 @@ module.exports = StyleSheet.create({
         alignSelf: 'center'
     },
     engagementText: {
-        flex: 1,
-        paddingBottom: 10,
+        padding: 2,
+        fontSize: 16,
         textAlign: 'center',
-        backgroundColor: '#999'
+        backgroundColor: '#FFF',
+        color: '#444',
+        fontWeight: 'bold'
     },
     engagementImage: {
         height: 100

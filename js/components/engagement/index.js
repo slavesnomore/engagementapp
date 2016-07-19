@@ -47,13 +47,13 @@ class Engagement extends Component {
                         <TouchableOpacity style={styles.engagementItem} onPress={() => this.pushNewRoute('video')}>
                             <Image source={require('../../../images/stockphoto.jpg')} />
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.engagementItem}>
+                        <TouchableOpacity style={styles.engagementItem} onPress={() => this.pushNewRoute('video')}>
                             <Image source={require('../../../images/stockphoto.jpg')} />
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.engagementItem}>
+                        <TouchableOpacity style={styles.engagementItem} onPress={() => this.pushNewRoute('video')}>
                             <Image source={require('../../../images/stockphoto.jpg')} />
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.engagementItem}>
+                        <TouchableOpacity style={styles.engagementItem} onPress={() => this.pushNewRoute('video')}>
                             <Image source={require('../../../images/stockphoto.jpg')} />
                         </TouchableOpacity>
                     </Content>
