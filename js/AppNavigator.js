@@ -17,7 +17,7 @@ import SplashPage from './components/splashscreen/';
 import Engagement from './components/engagement/';
 import TakeAction from './components/takeaction/';
 import Profile from './components/profile/';
-import Video from './components/video/';
+import VideoPage from './components/videopage/';
 import { statusBarColor } from "./themes/base-theme";
 
 Navigator.prototype.replaceWithAnimation = function (route) {
@@ -164,8 +164,8 @@ class AppNavigator extends Component {
                 return <TakeAction navigator={navigator} />;
             case 'profile':
                 return <Profile navigator={navigator} />;
-            case 'video':
-                return <Video navigator={navigator} />;
+            case 'videopage':
+                return <VideoPage navigator={navigator} />;
             default :
                 return <Login navigator={navigator}  />;
         }
