@@ -29,9 +29,9 @@ class Engagement extends Component {
                         <Button transparent onPress={() => this.popRoute()}>
                             <Icon name="ios-arrow-back" />
                         </Button>
-                        
+
                         <Title>Engagement</Title>
-                        
+
                         <Button transparent onPress={this.props.openDrawer}  style={{padding: 20,paddingTop: 33}}>
                             <Icon name="ios-menu" />
                         </Button>
@@ -44,16 +44,16 @@ class Engagement extends Component {
                         <Text style={styles.engagementText}>Find out how you can help</Text>
                     </View>
                     <Content style={{backgroundColor: '#fff'}} foregroundColor="#000">
-                        <TouchableOpacity style={styles.engagementItem} onPress={() => this.pushNewRoute('video')}>
+                        <TouchableOpacity style={styles.engagementItem} onPress={() => this.pushNewRoute('videopage')}>
                             <Image source={require('../../../images/stockphoto.jpg')} />
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.engagementItem} onPress={() => this.pushNewRoute('video')}>
+                        <TouchableOpacity style={styles.engagementItem} onPress={() => this.pushNewRoute('videopage')}>
                             <Image source={require('../../../images/stockphoto.jpg')} />
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.engagementItem} onPress={() => this.pushNewRoute('video')}>
+                            <TouchableOpacity style={styles.engagementItem} onPress={() => this.pushNewRoute('videopage')}>
                             <Image source={require('../../../images/stockphoto.jpg')} />
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.engagementItem} onPress={() => this.pushNewRoute('video')}>
+                        <TouchableOpacity style={styles.engagementItem} onPress={() => this.pushNewRoute('videopage')}>
                             <Image source={require('../../../images/stockphoto.jpg')} />
                         </TouchableOpacity>
                     </Content>
