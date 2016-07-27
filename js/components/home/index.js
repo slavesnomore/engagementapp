@@ -25,16 +25,15 @@ class Home extends Component {
             <Container theme={theme}>
                 {/*<Image source={require('../../../images/BG-signUp.png')} style={styles.container} >*/}
                     <Header>
-                        <Button transparent style={{padding: 20}}  onPress={() => this.resetRoute('login')}>
-                            <Icon name="ios-power" />
+                        <Button transparent onPress={this.props.openDrawer}  style={{padding: 20,paddingTop: 33}}>
+                            <Icon name="ios-menu" />
                         </Button>
                         
                         <Title>Home</Title>
                         
-                         <Button transparent onPress={this.props.openDrawer}  style={{padding: 20,paddingTop: 33}}>
-                            <Icon name="ios-menu" />
+                        <Button transparent style={{padding: 20}}  onPress={() => this.resetRoute('login')}>
+                            <Icon name="ios-power" />
                         </Button>
-                        
                     </Header>
 
                     <Content>
