@@ -1,7 +1,9 @@
 
 'use strict';
 
-import { StyleSheet } from "react-native";
+var React = require('react-native');
+var { StyleSheet, Dimensions } = React;
+var deviceWidth = Dimensions.get('window').width;
 
 module.exports = StyleSheet.create({
     links: {
@@ -30,7 +32,7 @@ module.exports = StyleSheet.create({
     },
     background: {
         flex: 1,
-        width: null,
+        width: (deviceWidth/3*2),
         height:null,
         backgroundColor: 'rgba(0,0,0,0.1)'
     },
