@@ -2,6 +2,7 @@
 
 import { StyleSheet } from "react-native";
 var React = require('react-native');
+var primary = require('../../themes/variable').brandPrimary;
 var { Dimensions } = React;
 
 var deviceHeight = Dimensions.get('window').height;
@@ -20,15 +21,14 @@ module.exports = StyleSheet.create({
         padding: 2,
         fontSize: 16,
         textAlign: 'center',
-        backgroundColor: '#FFF',
-        color: '#444',
+        backgroundColor: primary,
         fontWeight: 'bold'
     },
     engagementImage: {
-        height: 100
+        height: (deviceHeight/5)-10
     },
     engagementItem: {
         flex: 1,
-        height: 150
+        height: (deviceHeight/4)+5
     },
 });

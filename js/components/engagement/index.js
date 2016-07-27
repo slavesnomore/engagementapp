@@ -26,16 +26,13 @@ class Engagement extends Component {
             <Container theme={theme} style={{backgroundColor: '#01cca1'}}>
                 <Image source={require('../../../images/glow2.png')} style={styles.container} >
                     <Header>
-                        <Button transparent onPress={() => this.popRoute()}>
-                            <Icon name="ios-arrow-back" />
-                        </Button>
-
-                        <Title>Engagement</Title>
-
                         <Button transparent onPress={this.props.openDrawer}  style={{padding: 20,paddingTop: 33}}>
                             <Icon name="ios-menu" />
                         </Button>
-
+                        <Title>Engagement</Title>
+                        <Button transparent  style={{padding: 20}}>
+                            <Icon name="ios-search" />
+                        </Button>
                     </Header>
 
                     <View>
